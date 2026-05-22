@@ -7,11 +7,8 @@ import Slideshow from '@/components/slideShow'
 import Aboutslide from '@/components/about-slidShow'
 import { 
   FaRegClock,
-  FaRegStar,
-  FaRegHeart,
   FaPhoneAlt,
   FaEnvelope,
-  FaUserFriends,
   FaRegEye,
 } from 'react-icons/fa'
 import {
@@ -19,8 +16,6 @@ import {
   FaBookBible,
   FaCalendarDay,
   FaMapLocationDot,
-  FaClock,
-  FaShield,
 } from 'react-icons/fa6'
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
