@@ -59,7 +59,7 @@ function Header() {
             <li className="li" onClick={() => handleNavClick('events')}>Events</li>
             <li className="li" onClick={() => handleNavClick('contacts')}>Contact</li>
 
-            <button className="donatebtn mobile-donate" onClick={() => setOpen(false)}>
+            <button className="donatebtn mobile-donate" onClick={() => router.push("/support")}>
               Donate
             </button>
           </div>

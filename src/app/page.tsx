@@ -19,7 +19,15 @@ import {
 } from 'react-icons/fa6'
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import ministriesImg from '@/assets/grex10.jpg'
+import timmysax from '@/assets/grex10.jpg'
+import fola from '@/assets/Fola.jpg'
+import akinmade from '@/assets/Akinmade.jpg'
+import ijo from '@/assets/IjoBukky.jpeg'
+import miracle from '@/assets/miracle.jpg'
+import muyiwa from '@/assets/muyiwa.jpg'
+import lekan from '@/assets/pastorLekan.jpg'
+import olamide from '@/assets/olamide.jpg'
+import pure from '@/assets/pure2.jpg'
 import grex8 from '@/assets/Grex 8.0.jpeg'
 import { useRouter } from "next/navigation"
 
@@ -33,7 +41,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleClick = () => {
-    window.open('https://web.facebook.com/', '_blank', 'noopener,noreferrer');
+    window.open('https://youtube.com/@graceexplosionnetwork4623?si=nlnrnYqud5KfVulsF', '_blank', 'noopener,noreferrer');
   };
 
   const sendEmail = (e: React.FormEvent) => {
@@ -141,66 +149,57 @@ export default function Home() {
 
         <div className="ministries-content">
           <div className="ministries-items">
-            <Image src={ministriesImg} alt="Ministries" />
+            <Image src={miracle} alt="Ministries"/>
+            <div className="ministers-bio">
+              <h1>Miracle Akinro</h1>
+            </div>
+          </div>
+          <div className="ministries-items">
+            <Image src={muyiwa} alt="Children's Ministry"/>
             <div className="ministers-bio">
               <h1>Minister Muyiwa Nafiu</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fuga nulla, consectetur animi accusantium 
-                beatae quia est deleniti ut nobis, quasi vero! Magnam illum ipsam inventore, voluptatem minima ab veritatis ut 
-                iure ipsa dolores repellat dolorum officia voluptas, ipsum non cumque nesciunt voluptate fugiat cum temporibus maiores 
-                officiis eaque quisquam. Numquam est perferendis beatae, quam amet voluptate quasi, impedit deleniti repudiandae possimus 
-                ea consectetur harum ipsam ex tempora sint! Veniam dicta ex totam blanditiis illum, magnam debitis similique aliquid eveniet, 
-                inventore distinctio! Impedit numquam, laborum sed amet a cumque officia itaque. Corrupti ea provident dignissimos. Aliquid 
-                provident excepturi dolores quos!</p>
             </div>
           </div>
           <div className="ministries-items">
-            <Image src={ministriesImg} alt="Children's Ministry" />
+            <Image src={fola} alt="Youth Ministry" />
             <div className="ministers-bio">
               <h1>Minister Fola Eden</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fuga nulla, consectetur animi accusantium 
-                beatae quia est deleniti ut nobis, quasi vero! Magnam illum ipsam inventore, voluptatem minima ab veritatis ut 
-                iure ipsa dolores repellat dolorum officia voluptas, ipsum non cumque nesciunt voluptate fugiat cum temporibus maiores 
-                officiis eaque quisquam. Numquam est perferendis beatae, quam amet voluptate quasi, impedit deleniti repudiandae possimus 
-                ea consectetur harum ipsam ex tempora sint! Veniam dicta ex totam blanditiis illum, magnam debitis similique aliquid eveniet, 
-                inventore distinctio! Impedit numquam, laborum sed amet a cumque officia itaque. Corrupti ea provident dignissimos. Aliquid 
-                provident excepturi dolores quos!</p>
             </div>
           </div>
           <div className="ministries-items">
-            <Image src={ministriesImg} alt="Youth Ministry" />
+            <Image src={timmysax} alt="Ministries" />
             <div className="ministers-bio">
-              <h1>Minister Elvis</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fuga nulla, consectetur animi accusantium 
-                beatae quia est deleniti ut nobis, quasi vero! Magnam illum ipsam inventore, voluptatem minima ab veritatis ut 
-                iure ipsa dolores repellat dolorum officia voluptas, ipsum non cumque nesciunt voluptate fugiat cum temporibus maiores 
-                officiis eaque quisquam. Numquam est perferendis beatae, quam amet voluptate quasi, impedit deleniti repudiandae possimus 
-                ea consectetur harum ipsam ex tempora sint! Veniam dicta ex totam blanditiis illum, magnam debitis similique aliquid eveniet, 
-                inventore distinctio! Impedit numquam, laborum sed amet a cumque officia itaque. Corrupti ea provident dignissimos. Aliquid 
-                provident excepturi dolores quos!</p>
+              <h1>TimmySax Global</h1>
             </div>
           </div>
-          
-        </div>
-
-        <div className="other-mini">
-          <h1>Additional Ministers</h1>
-
-          <div className="addmini-content">
-            <div className="addmini-item">
-              <h3>Other Ministring:</h3>
-              <ol>
-                <li>Minister Gbolahan Oni</li>
-                <li>The Christ Oasis Crew</li>
-                <li>Minister Havilah</li>
-              </ol>
+          <div className="ministries-items">
+            <Image src={lekan} alt="Children's Ministry" />
+            <div className="ministers-bio">
+              <h1>Pastor Lekan Michaels</h1>
             </div>
-            <div className="addmini-item">
-              <h3>Campus Fellowships:</h3>
-              <ol>
-                <li>ANBC</li>
-                <li>RCF</li>
-                <li>VLCF</li>
-              </ol>
+          </div>
+          <div className="ministries-items">
+            <Image src={akinmade} alt="Youth Ministry" />
+            <div className="ministers-bio">
+              <h1>Akin&apos;made & Sweetsound</h1>
+            </div>
+          </div>
+          <div className="ministries-items">
+            <Image src={olamide} alt="Ministries" />
+            <div className="ministers-bio">
+              <h1>Minister Olamide</h1>
+            </div>
+          </div>
+          <div className="ministries-items">
+            <Image src={ijo} alt="Children's Ministry" />
+            <div className="ministers-bio">
+              <h1>Minister Ijo Bukky</h1>
+            </div>
+          </div>
+          <div className="ministries-items">
+            <Image src={pure} alt="Youth Ministry" />
+            <div className="ministers-bio">
+              <h1>Pure Concepts & The Praise Nation</h1>
             </div>
           </div>
         </div>
@@ -228,7 +227,7 @@ export default function Home() {
               <li><FaRegClock/> 7:00 PM & 5:00 AM</li>
               <li><FaLocationDot/> Holufort Event Center, Oke Baale, Osogbo, Osun State</li>
             </ul>
-            <a href=""><button className='item-btn'>Learn More</button></a>
+            {/* <a href=""><button className='item-btn'>Learn More</button></a> */}
           </div>
 
           {/* <div className="events-items">
@@ -266,7 +265,7 @@ export default function Home() {
                 <FaPhoneAlt size={23} style={{ marginLeft: 10, marginTop: 20}}/>
                 <div className="info">
                   <h4>Phone</h4>
-                  <h5>08123456789</h5>
+                  <h5>08105300988</h5>
                   <p>Call us anytime</p>
                 </div>
               </div>
@@ -274,7 +273,7 @@ export default function Home() {
                 <FaEnvelope size={23} style={{ marginLeft: 10, marginTop: 20}} />
                 <div className="info">
                   <h4>Email</h4>
-                  <h5>info@GREX.org</h5>
+                  <h5>gracexplosion1@gmail.com</h5>
                   <p>Send us a message</p>
                 </div>
               </div>
@@ -296,7 +295,7 @@ export default function Home() {
               </div> */}
             </div>
 
-            <div className="map">
+            {/* <div className="map">
               <div>
                 <div className="map-icon">
                   <FaMapLocationDot size={50} />
@@ -304,7 +303,7 @@ export default function Home() {
                 
                 <p>Interactive Map Coming Soon</p>
               </div>
-            </div>
+            </div> */}
 
           </div>
 

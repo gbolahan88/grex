@@ -386,8 +386,22 @@
 }
 .ministries-items img {
   width: 100%;
-  height: 220px;
+  height: 300px;   
   object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+}
+.ministries-items:nth-child(1) img {
+  object-position: center 19%; 
+}
+.ministries-items:nth-child(2) img {
+  object-position: center 40%; 
+}
+.ministries-items:nth-child(3) img {
+  object-position: center 45%;
+}
+.ministries-items:nth-child(4) img {
+  object-position: center 45%;
 }
 .card-list {
   position: relative;
@@ -1109,6 +1123,17 @@ hr {
     text-align: justify;
     font-size: 15px;
     margin-bottom: 40px;
+  }
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid {
+    max-width: 80%;
+    text-align: justify;
   }
 
   .ministries-content {

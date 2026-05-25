@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: "Grex",
   description: "Join us for a night of worship & thanksgiving.",
   icons: {
-    icon: "/favicon.ico", 
     apple: "/apple-touch-icon.png",
   },
 };
@@ -31,7 +30,23 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>
+      <head>
+        {/* Light mode favicon */}
+        <link
+          rel="icon"
+          href="/favicon-dark.ico"
+          media="(prefers-color-scheme: light)"
+        />
+        {/* Dark mode favicon */}
+        <link
+          rel="icon"
+          href="/favicon-light.ico"
+          media="(prefers-color-scheme: dark)"
+        />
+      </head>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
