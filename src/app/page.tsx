@@ -30,6 +30,7 @@ import olamide from '@/assets/olamide.jpg'
 import pure from '@/assets/pure2.jpg'
 import grex8 from '@/assets/Grex 8.0.jpeg'
 import { useRouter } from "next/navigation"
+import { Analytics } from "@vercel/analytics/next"
 
 
 export default function Home() {
@@ -75,6 +76,7 @@ export default function Home() {
 
   return (
     <>
+      <Analytics />
       <Header />
       <section className="hero-container" id="home">
         <Slideshow /> 
