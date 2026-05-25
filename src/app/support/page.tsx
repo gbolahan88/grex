@@ -24,6 +24,7 @@ declare global {
         amount: number
         currency: string
         ref: string
+        channels?: string[]
         onClose: () => void
         callback: (response: { reference: string }) => void
       }) => { openIframe: () => void }
@@ -205,6 +206,7 @@ export default function SupportPage() {
         email,
         amount: parsedAmount * 100,
         currency: "NGN",
+        channels: ['card', 'bank', 'ussd', 'bank_transfer', 'mobile_money'],
         ref: reference,
         onClose: () => {
           pendingPayment.current = null
